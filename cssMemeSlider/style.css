@@ -100,7 +100,6 @@ input {
     background-image: url(./assets/memes/crossword.jpg);
 }
 
-
 .controls_container {
     display: flex;
     flex-direction: row;
@@ -183,4 +182,15 @@ input:checked + label:hover {
 
 .meme_slider:has(#mem_six:checked) .text_container {
     transform: translateX(-50rem);
+}
+
+@media (max-width: 768px) {
+    .controls_text_container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .controls_container {
+        justify-content: center;
+    }
 }
