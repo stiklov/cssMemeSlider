@@ -100,6 +100,12 @@ input {
     background-image: url(./assets/memes/crossword.jpg);
 }
 
+.mem_seven {
+    width: 25rem;
+    height: 100%;
+    background-image: url(./assets/memes/fail.jpg);
+}
+
 .controls_container {
     display: flex;
     flex-direction: row;
@@ -164,6 +170,10 @@ input:checked + label:hover {
     transform: translateX(-125rem);
 }
 
+.meme_slider:has(#mem_seven:checked) .memes_container {
+    transform: translateX(-150rem);
+}
+
 .meme_slider:has(#mem_two:checked) .text_container {
     transform: translateX(-10rem);
 }
@@ -182,6 +192,10 @@ input:checked + label:hover {
 
 .meme_slider:has(#mem_six:checked) .text_container {
     transform: translateX(-50rem);
+}
+
+.meme_slider:has(#mem_seven:checked) .text_container {
+    transform: translateX(-60rem);
 }
 
 @media (max-width: 768px) {
