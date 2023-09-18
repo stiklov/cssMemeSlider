@@ -133,6 +133,7 @@ label:active {
     width: 10rem;
     display: flex;
     flex-direction: row;
+    padding-top: 0.2rem;
     transition: all 0.25s;
 }
 
